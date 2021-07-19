@@ -76,10 +76,10 @@ function countFridayMonday(){
     p3.innerText= countMinutes;
     let p4 = document.getElementById('seconds');
     p4.innerText = countSeconds;
-   // let divDashP = document.getElementById("dashp");
-    //setInterval(function(){ 
-   //   divDashP.innerHTML = "testando";
-   // }, 1000);
+    setTimeout(()=>{
+      p4.innerHTML = countSeconds;
+      }, 1000)
+      
   }
          
   countFridayMonday();
