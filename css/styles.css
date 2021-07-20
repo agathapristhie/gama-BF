@@ -76,10 +76,14 @@ input {
     clear:both; 
     display:block; 
 }
+span{
+    font-size:20px; 
+    color:#ccc; 
+}
 
 #days {
     color:#f5f5f5;
 }
-#titlepromo{
+h2{
     color: #f5f5f5;;
 }

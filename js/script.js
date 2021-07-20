@@ -17,7 +17,8 @@ setTimeout(()=>{
 content.innerHTML = ready;
 }, 1000)
 })
-function countFridayMonday(){
+
+setInterval(function () {
     let today = new Date();
     let blackFridayDate = new Date("Nov 26, 2021 00:00:00"); //black friday 2021
     let cyberMondayDate = new Date("Nov 29, 2021 00:00:00");
@@ -67,20 +68,17 @@ function countFridayMonday(){
        
     //document.getElementById("days").innerText = blackFridayDays.toString;
     let hCounter = document.getElementById('titlepromo');
-    hCounter.innerText = titlePromo;
+    hCounter.innerHTML = titlePromo;
     let p1 = document.getElementById('days');
-    p1.innerText= countDays;
+    p1.innerHTML= countDays;
     let p2 = document.getElementById('hours');
-    p2.innerText = countHours;
+    p2.innerHTML = countHours;
     let p3 = document.getElementById('minutes');
-    p3.innerText= countMinutes;
+    p3.innerHTML= countMinutes;
     let p4 = document.getElementById('seconds');
-    p4.innerText = countSeconds;
-    setTimeout(()=>{
-      p4.innerHTML = countSeconds;
-      }, 1000)
-      
-  }
-         
-  countFridayMonday();
+    p4.innerHTML=countSeconds;
+  }, 1000);
+  
+ 
+   
   
